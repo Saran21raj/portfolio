@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+.homepage{
+    padding-top: 110px;
+    width: 100vw;
+    height: 100vh;
+}
+.outerContainer{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+.navbar{
+    display: none;
+}
+.innerContainer-words{
+    height: 80%;
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.words{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 40px;
+}
+.wordsanimation{
+    animation-name: words-fadein ;
+    animation-duration: 5s;
+}
+@keyframes words-fadein {
+    0%{
+       visibility: hidden;
+        opacity: 0;
+    }
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.first-line, .second-line, .third-line, .last-line{
+    margin: 0;
+}
+.resume{
+    height: 40px;
+    width: 100px;
+    border: 2px solid;
+    background-color: transparent;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    border-radius: 5px;
+    animation-name: button-position;
+    animation-duration: 1s;
+}
+
+.resume:hover{
+    cursor: pointer;
+}
+@keyframes button-position {
+    0%{
+        position: relative;
+        left:500px;
+    }
+    100%{
+        position:relative;
+        left:0;
+    }
+    
+}
+.innerContainer-image{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    height: 300px;
+}
+.imageanimation{
+    animation-name: image-position;
+    animation-duration: 1s;
+}
+
+@keyframes image-position {
+    0%{
+        position: relative;
+        right: 800px;
+    }
+    100%{
+        position: relative;
+        right:0;
+    }
+}
+
+@media (max-width:1024px) {
+    .words{
+        font-size: 30px;
+    }
+}
+@media(max-width:768px){
+    .words{
+        font-size: 25px;
+    }
+}
+@media(max-width:600px) {
+    .outerContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image{
+        height: 250px;
+    }
+}
+@media (max-width:425px) {
+    .words{
+        font-size: 20px;
+    }
+    .image{
+        height: 200px;
+    }
+}
+@media (max-width:375px){
+    .words{
+        font-size: 18px;
+    }
+}

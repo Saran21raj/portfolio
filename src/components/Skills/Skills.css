@@ -1,0 +1,138 @@
+.skillspage{
+    padding-top: 110px;
+}
+
+.skills-main-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.skills-container{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-evenly;
+    margin-top: -60px;
+    transform: scale(0.8);
+    padding: 10px;
+    border-radius: 8px;
+    background-color: white;
+    gap:20px;
+    height: 80%;
+    color: white;
+}
+.skills-inner-container{
+    display: flex;
+    justify-self:center;
+    align-items: center;
+}
+.skillsicon{
+    height: 70px;
+    width: 70px;
+    animation:  rotate 2s  infinite alternate-reverse;
+}
+@keyframes rotate {
+    0% {
+        transform: perspective(200px) rotateY(20deg) rotateX(-20deg);
+      }
+      25% {
+        transform: perspective(200px) rotateY(0) rotateX(20deg);
+      }
+      50% {
+        transform: perspective(200px) rotateY(-20deg) rotateX(-20deg);
+      }
+      75% {
+        transform: perspective(200px) rotateY(0) rotateX(20deg);
+      }
+      100% {
+        transform: perspective(200px) rotateY(20deg) rotateX(-20deg);
+      }
+}
+@keyframes rotatey {
+    from{
+        transform: rotatey(-30deg);
+    }
+    to{
+        transform: rotatey(30deg);
+    }
+}
+.skills-container .coding-love{
+    grid-column: 1/4;
+}
+.skills-container .skill1{
+    grid-column: 2/4;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.skill-progressbar{
+    border-radius: 13px;
+    padding: 3px;
+    border: white solid 2px;
+}
+
+.advanced{
+    height: 15px;
+    width: 100%;
+    background-color: #293462;
+    border-radius: 10px;
+    animation: advanced-anim 1500ms ease-in-out;
+}
+
+@keyframes advanced-anim {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+    
+}
+.intermediate{
+    height: 15px;
+    width: 70%;
+    background-color: white;
+    border-radius: 10px;
+    animation: intermediate-anim 1500ms ease-in-out;
+}
+
+@keyframes intermediate-anim {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+    
+}
+.skill{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+@media (max-width:768px) {
+    .skillsicon{
+        height: 50px;
+        width: 50px;
+    }
+    .skills-container{
+        height: 70%;
+    }
+}
+@media (max-width:450px) {
+    .skillsicon{
+        height: 45px;
+        width: 45px;
+    }
+    .skills-container{
+        height: 70%;
+    }
+}

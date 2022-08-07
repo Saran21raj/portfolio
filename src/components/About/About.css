@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+.aboutpage{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 110px;
+}
+.about-words{
+    margin-left: 70px;
+    margin-top: 100px;
+}
+.about-line{
+    font-weight: bolder;
+    font-size: 45px;
+    color: white;
+}
+.about-line-animation{
+    animation: about-line 2s steps(28);
+    white-space: nowrap;
+    overflow: hidden;
+}
+@keyframes about-line {
+    from {
+        width: 0;
+        border-right: 3px solid;
+    }
+    to{
+        width: 28ch;
+    }
+}
+.about-description{
+    margin-top: 30px;
+    margin-right: 150px;
+}
+.para{
+    font-size: 25px;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    margin-bottom: 20px;
+}
+.para-animation{
+    animation-name: para-fadein ;
+    animation-duration: 4s;
+}
+@keyframes para-fadein {
+    0%{
+       visibility: hidden;
+        opacity: 0;
+    }
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+@media(max-width:1300px){
+    .para{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:1024px){
+    .para{
+        font-size: 18px;
+    }
+}
+@media (max-width:900px){
+    .para{
+        font-size: 16px;
+    }
+    .about-description{
+        width: 90%;
+    }
+}
+@media (max-width:650px){
+    .about-line{
+        font-size: 30px;
+        color: white;
+    }
+    .para{
+        font-size: 14px;
+    }
+}
+@media (max-width:500px){
+    .about-words{
+        margin-left: 30px;
+    }
+    .about-line{
+        font-size: 25px;
+        color: white;
+    }
+    .para{
+        font-size: 12px;
+    }
+}
+@media (max-width:375px){
+    .about-words{
+        margin-left: 15px;
+    }
+    .about-line{
+        font-size: 20px;
+        color: white;
+    }
+    .para{
+        font-size: 12px;
+    }
+}
+/*
+@media(max-width:768px){
+    .about-line1{
+        font-size: 40px;
+    }
+    .para1,.para2,.para3{
+        font-size: 16px;
+    }
+}
+@media(max-width:650px){
+    .about-words{
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+    .about-line1{
+        font-size: 30px;
+    }
+    .para1,.para2,.para3{
+        font-size: 14px;
+    }
+}
+@media(max-width:450px){
+    .about-words{
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+    .about-line1{
+        font-size: 25px;
+    }
+    .para1,.para2,.para3{
+        font-size: 14px;
+    }
+}
+@media(max-width:375px){
+    .about-words{
+        margin-left: 25px;
+        margin-top: 10px;
+    }
+    .about-line1{
+        font-size: 22px;
+    }
+    .para1,.para2,.para3{
+        font-size: 14px;
+    }
+}
+@media(max-width:340px){
+    .about-words{
+        margin-left: 15px;
+        margin-top: 10px;
+    }
+    .about-line1{
+        font-size: 22px;
+    }
+    .para1,.para2,.para3{
+        font-size: 14px;
+    }
+} */
